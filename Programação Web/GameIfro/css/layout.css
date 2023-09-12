@@ -1,0 +1,112 @@
+/*Iniciando*/
+*{
+    box-sizing: border-box;
+    /*Modifica a maneira de exibir o tamanho de uma caixa, define como as dimensões de um elemento são calculadas: devem incluir preenchimento e bordas ou não*/
+}
+
+/* Corpo */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/*Classe para o cabeçalho*/
+.cabecalho{
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+}
+
+/* H1 */
+.cabecalho h1 {
+    font-size: 50px;
+    /*Formatando o tamanho da fonte H1 dentro do cabeçalho */
+}
+
+/* Navegação */
+.topnav{
+    overflow: hidden; /*Controlando o conteúdo */
+    background-color: #333;
+}
+
+/*Formatando os links */
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Passar o Mouse */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Criando a coluna esquerda */
+.ColEsq {
+    float: left;
+    width: 75%;
+}
+
+/* Criando a coluna direita */
+.ColDir {
+    float:left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Imagens */
+.imagens {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Exibição */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Removendo o Float */
+.linha:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Rodapé */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+/* Mudando as Propriedades */
+@media screen and (max-width: 800px){
+
+    #ColEsq,
+    #ColDir {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
